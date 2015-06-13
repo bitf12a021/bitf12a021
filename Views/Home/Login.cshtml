@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<div class="content">
+      <div class="container">
+        <div class="page-header">
+          <h1><font color="lightblue">Login Menu</font></h1>
+        </div>
+        <div class="row">
+          <div class="span6 offset3">
+            <h4 class="widget-header"><font color="lightblue">Give Login Details</h4>
+            <div class="widget-body">
+              <div class="center-align">
+                <form class="form-horizontal form-signin-signup" action="/Home/Validate" method="post">
+                  <input type="text" name="uname" placeholder="User Name" required="required">
+                    <br /><br />
+                  <input type="password" name="password" placeholder="Password" required="required">
+                  <div class="remember-me">
+                    <div class="pull-left">
+                      <label class="checkbox">
+                        <input type="checkbox">Remember me
+                      </label>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#"><font color="red">Forgot password?</font></a>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <input type="submit" value="Signin" class="btn btn-primary btn-large">
+                    
+                  
+                </form>
+                 <button  class="btn btn-danger btn-large" ><a  href="/Home/Index">Cancel</a></button>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
