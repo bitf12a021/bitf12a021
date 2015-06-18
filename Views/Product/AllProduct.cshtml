@@ -2,14 +2,14 @@
     ViewBag.Title = "AllProduct";
 }
 @{
-    Layout = "~/Views/Shared/ProductLayout.cshtml";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
 
 }
 @model List<Project_1.Models.Product>
 <!-- Start: PRODUCT LIST -->
         <div class="container">
           <div class="page-header">
-            <h2><font color="blue">All products</font></h2>
+            <h2><font color="lightblue">All Products</font></h2>
           </div>
           <div class="row-fluid">
             <ul class="thumbnails">
@@ -28,8 +28,8 @@
                   </div>
                   <div class="widget-footer">
                     <p>
-                      <a href="/Product/updateProduct?pname=@p1.ProductName" class="btn btn-primary">Edit</a>&nbsp;
-                      <a href="/Product/delproduct?pname=@p1.ProductName" class="btn">Delete</a>
+                      <a href="/Product/updateProduct?pname=@p1.ProductName" class="btn btn-primary">Edit</a>
+                      <a href="/Product/delproduct?pname=@p1.ProductName" class="btn btn-danger">Delete</a>
                     </p>
                   </div>
                 </div>

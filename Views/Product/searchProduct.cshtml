@@ -2,7 +2,7 @@
     ViewBag.Title = "searchProduct";
 }
 @{
-    Layout = "~/Views/Shared/ProductLayout.cshtml";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
 
 }
 
@@ -34,15 +34,16 @@
 
 <body>
     <div class="page-header">
-          <h1><font color="green">Search Product</font></h1>
+          <h1><font color="lightblue">Search Product</font></h1>
 </div>
     <div align="center">
       
         
-      <font color="blue" size="5">
-
+      <font color="lightblue" size="5">
+<div class="form-group">
       <div>
-          <label>Select Catagory</label></div>
+          
+          <label><h4>Select Catagory</h4></label></div>
           <div>
      <select id="modSelector" name="mod">
   <option value="0">-Select catagory-</option>
@@ -52,7 +53,9 @@
       <option value="usb">Usbs</option>
 
   
-</select>
+   </select>
+              </div>
+              </div>
               <form action="/Product/seeDetail" method="post">
                   <div>
                       <select id="ProductSelctor" name="pname"></select>
